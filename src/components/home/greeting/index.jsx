@@ -1,7 +1,9 @@
 import {Component} from "react";
-import {Typography} from "@mui/material";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import {styleSheet} from "./style";
+import {Typography} from "@mui/material";
+import {withStyles} from "@mui/styles";
 
 class Greeting extends Component{
 
@@ -10,8 +12,9 @@ class Greeting extends Component{
     }
 
     render() {
+        const {classes}=this.props;
         return(
-            <div>
+            <div className={classes.container}>
                 <div>
                     <Typography variant="h2" gutterBottom>
                         {this.props.name} Tharindu Dakshina
@@ -88,4 +91,4 @@ const itemData = [
         title: 'Bike',
     },
 ];
-export default Greeting;
+export default withStyles(styleSheet)(Greeting);
