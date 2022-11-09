@@ -1,5 +1,6 @@
 import React,{Component} from "react";
-import {Button, Typography} from "@mui/material";
+import {Typography} from "@mui/material";
+import CommandButton from "../../common/button";
 class Countable extends Component{
 
     constructor(props) {
@@ -28,7 +29,9 @@ class Countable extends Component{
                 <Typography variant="h4" gutterBottom>
                     Count : {this.state.count}
                 </Typography>
-                <Button
+
+
+                {/*<Button
                     variant="contained"
                     onClick={()=>{
                         console.log("Clicked");
@@ -46,7 +49,37 @@ class Countable extends Component{
                     variant="contained"
                     onClick={()=>{
                         this.resetCount();
-                    }}>Reset</Button>
+                    }}>Reset</Button>*/}
+
+                <CommandButton
+                        label="Increase"
+                        variant="contained"
+                        onClick={()=>{
+                            console.log("incrementCount");
+                            this.incrementCount();
+                        }}
+                />
+
+                <CommandButton
+                    label="Decrease"
+                    variant="outlined"
+                    onClick={()=>{
+                        console.log("decrementCount");
+                        this.decrementCount();
+                    }}
+                    style={{margin:"15px"}}
+                />
+
+                <CommandButton
+                    label="Reset"
+                    variant="outlined"
+                    color="error"
+                    onClick={()=>{
+                        console.log("resetCount");
+                        this.resetCount();
+                    }}
+                />
+
             </div>
 
 
