@@ -17,42 +17,48 @@ class Greeting extends Component{
         const {classes}=this.props;
         return(
             <div className={classes.container}>
-                <div>
-                    <Typography variant="h3" gutterBottom>
-                        Login page
-                    </Typography>
-                </div>
+                <div className={classes.login__cover}>
+                    <div>
+                        <Typography variant="h3" gutterBottom>
+                            Login page
+                        </Typography>
+                    </div>
 
-                <div className={classes.icon}>
-                    <img src={icon} alt="user image"/>
-                </div>
+                    <div className={classes.icon}>
+                        <img src={icon} alt="user image"/>
+                    </div>
 
-                <div>
-                    <TextField style={{marginTop:"30px",width:"20vw"}}
-                               id="standard-basic"
-                               label="Username"
-                               variant="standard" />
+                    <div>
+                        <TextField style={{marginTop:"30px",width:"20vw"}}
+                                   id="standard-basic"
+                                   label="Username"
+                                   variant="standard" />
                         <br/>
-                    <TextField
-                        id="standard-password-input"
-                        label="Password"
-                        type="password"
-                        autoComplete="current-password"
-                        variant="standard"
-                        style={{marginTop:"30px",width:"20vw",fontSize:"4rem"}}
-                    />
+                        <TextField
+                            id="standard-password-input"
+                            label="Password"
+                            type="password"
+                            autoComplete="current-password"
+                            variant="standard"
+                            style={{marginTop:"30px",width:"20vw",fontSize:"4rem"}}
+                        />
+                    </div>
+
+                    <div>
+                        <CommandButton
+                            label="Login"
+                            variant="contained"
+                            color="warning"
+                            onClick={()=>{
+                                console.log("incrementCount");
+                                // this.incrementCount();
+                            }}
+                            style={{marginTop:"50px"}}
+                        />
+                    </div>
                 </div>
 
-                <CommandButton
-                    label="Login"
-                    variant="contained"
-                    color="warning"
-                    onClick={()=>{
-                        console.log("incrementCount");
-                        // this.incrementCount();
-                    }}
-                    style={{marginTop:"50px"}}
-                />
+
             </div>
         );
     }
