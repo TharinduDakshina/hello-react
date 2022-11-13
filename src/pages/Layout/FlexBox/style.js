@@ -1,5 +1,17 @@
-import {Component} from "react";
-import {styleSheetNotFound} from "./notFoundStyle"
+export const styleSheet={
+    container:{
+        display:"flex",
+        backgroundColor:"gray",
+        width:"100vw",
+        height:"100vh"
+    }
+}
+
+
+
+
+
+/*
 import {Typography} from "@mui/material";
 import CommandButton from "../../../components/common/button";
 import imageLocation from "../../../assets/images/404svg.webp";
@@ -20,7 +32,7 @@ class NotFound extends Component{
 
                 <div>
                     <Typography variant="h2" gutterBottom>
-                         Tharindu Dakshina
+                        Tharindu Dakshina
                     </Typography>
                 </div>
 
@@ -38,4 +50,4 @@ class NotFound extends Component{
     }
 }
 
-export default withStyles(styleSheetNotFound)(NotFound);
+export default withStyles(styleSheetNotFound)(NotFound);*/
