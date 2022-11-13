@@ -116,13 +116,13 @@ class Greeting extends Component{
             console.log("successfully check values");
             this.setState({
                 open:true,
-                message:"User credential successful.",
+                message:"User credential matching successful.",
                 severity:"success"
             });
         }else {
             this.setState({
                 open:true,
-                message:"User credential not successful..!",
+                message:"User credential is not matching..!",
                 severity:"error"
             });
         }

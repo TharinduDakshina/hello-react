@@ -38,8 +38,6 @@ class Greeting extends Component{
             </div>
         );
     }
-
-
 }
 const itemData = [
     {

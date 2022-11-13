@@ -1,5 +1,5 @@
 import {Component, Fragment} from "react";
-import Greeting from "../../components/login/greeting";
+import Greeting from "../../../components/login/greeting";
 
 
 class LoginPage extends Component{

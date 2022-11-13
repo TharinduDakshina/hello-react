@@ -22,7 +22,7 @@ class SnackBar extends Component{
         autoHideDuration:3000,
         anchorOrigin:{
             vertical:"bottom",
-            horizontal:"center"
+            horizontal:"left"
         },
         variant:"filled"
     }
