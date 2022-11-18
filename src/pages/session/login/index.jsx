@@ -13,7 +13,6 @@ class LoginPage extends Component{
             <div>
                 <Fragment>
                     <Greeting/>
-
                 </Fragment>
             </div>
         );
